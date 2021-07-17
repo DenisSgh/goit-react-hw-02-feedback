@@ -3,7 +3,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 350px;
+  width: 500px;
 }
 
 section:not(:last-child) {
@@ -13,4 +13,5 @@ section:not(:last-child) {
 .title {
   font-size: 30px;
   margin-bottom: 10px;
+  color: #ffb700;
 }

@@ -1,9 +1,10 @@
 .list {
   width: 300px;
   padding: 15px;
-  border: 1px solid #4b5ed7;
-  color: #4b5ed7;
-  background-color: #ffb700;
+  border: 2px solid #ffb700;
+  border-radius: 10px;
+  color: #ffb700;
+  background-color: #4b5ed7;
 }
 
 .item {
