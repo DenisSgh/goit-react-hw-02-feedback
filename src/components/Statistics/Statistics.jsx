@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Section from '../Section/Section';
 import Notification from '../Notification';
 
-import styles from './Statistics.module.css';
+import s from './Statistics.module.css';
 
 const Statistics = ({
   title,
@@ -19,12 +19,12 @@ const Statistics = ({
   return (
     <Section title={title}>
       {total(good, neutral, bad) > 0 ? (
-        <ul>
-          <li className={styles.item}>Good: {good}</li>
-          <li className={styles.item}>Neutral: {neutral}</li>
-          <li className={styles.item}>Bad: {bad}</li>
-          <li className={styles.item}>Total: {totalFeedback}</li>
-          <li className={styles.item}>Positive feedback: {positiveFeedback}</li>
+        <ul className={s.list}>
+          <li className={s.item}>Good: {good}</li>
+          <li className={s.item}>Neutral: {neutral}</li>
+          <li className={s.item}>Bad: {bad}</li>
+          <li className={s.item}>Total: {totalFeedback}</li>
+          <li className={s.item}>Positive feedback: {positiveFeedback}</li>
         </ul>
       ) : (
         <Notification />

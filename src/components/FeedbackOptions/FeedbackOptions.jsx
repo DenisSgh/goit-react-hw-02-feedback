@@ -2,18 +2,18 @@ import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
 import Section from '../Section';
-import styles from './FeedbackOptions.module.css';
+import s from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ title, options, onLeaveFeedback }) => {
   return (
     <Section title={title}>
-      <ul className={styles.list}>
+      <ul className={s.list}>
         {options.map(option => {
           return (
             <li key={shortid.generate()}>
               <button
                 type="button"
-                className={styles.button}
+                className={s.button}
                 onClick={() => onLeaveFeedback(option)}
               >
                 {option[0].toUpperCase() + option.slice(1)}

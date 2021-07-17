@@ -1,3 +1,11 @@
+.list {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #4b5ed7;
+  color: #4b5ed7;
+  background-color: #ffb700;
+}
+
 .item {
   font-size: 24px;
 }
